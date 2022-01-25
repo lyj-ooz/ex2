@@ -64,7 +64,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="minusButton" destination="Ld3-kM-W1U" id="eI5-LR-sXv"/>
                         <outlet property="numberLabel" destination="Hbv-Cj-Bxb" id="AuS-1Y-V7S"/>
+                        <outlet property="plusButton" destination="WFL-Zt-Zel" id="1qJ-R3-1zu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     var number: Int = 0
 
     @IBOutlet var numberLabel: UILabel!
+    @IBOutlet var plusButton: UIButton!
+    @IBOutlet var minusButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +21,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusPressed(_ sender: UIButton) {
-        number += 1
-        numberLabel.text = String(number)
+        
+        plusButton.alpha = 0.5
+        
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+                
+            self.plusButton.alpha = 1.0
+            
+            self.number += 1
+            self.numberLabel.text = String(self.number)
+            
+            timer.invalidate()
+        }
+        
+        
 
     }
     
     @IBAction func minusPressed(_ sender: UIButton) {
-        number -= 1
-        numberLabel.text = String(number)
+        
+        minusButton.alpha = 0.5
+
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) { (timer) in
+                
+            self.minusButton.alpha = 1.0
+            
+            self.number -= 1
+            self.numberLabel.text = String(self.number)
+            
+            timer.invalidate()
+        }
+        
+        
     }
     
 
