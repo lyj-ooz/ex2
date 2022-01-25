@@ -3,7 +3,7 @@
 * 특징: Timer
 
 # ios practice 2
-A simple app that has two buttons - '+' button that increases a number by one and '-' button that decreased a number by one
+A simple app that has two buttons - '+' button that increases a number by one and '-' button that decreases a number by one
 * feature: Timer
 
 ![ios practice 2 screenshot](https://github.com/lyj-ooz/ex2/blob/master/screenshot.png)
